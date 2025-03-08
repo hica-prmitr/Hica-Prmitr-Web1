@@ -1,6 +1,12 @@
 /* --------------------------------------------------------------------------------------------------- */
 /* Font Used ..  */
 @font-face {
+    font-family: 'Conforto';
+    src: url('../public/fonts/Conforto/confortotrial-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'Roboto';
     src: url('../public/fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
     font-weight: normal;

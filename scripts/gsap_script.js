@@ -26,7 +26,7 @@ function rotateCarousel(direction) {
 
 // Auto-slide function
 function startAutoSlide() {
-    autoSlide = setInterval(() => rotateCarousel("next"), 3000);
+    autoSlide = setInterval(() => rotateCarousel("next"), 2000);
 }
 
 // Function to restart auto-slide after manual interaction
