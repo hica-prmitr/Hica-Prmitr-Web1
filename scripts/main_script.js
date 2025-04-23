@@ -10,36 +10,6 @@ function changeFont() {
 }
 
 // ---------------------------------------------------------------------------------
-// event timer js logic
-// function startCountdown(eventDate) {
-//     function updateTimer() {
-//         const now = new Date().getTime();
-//         const timeLeft = eventDate - now;
-
-//         if (timeLeft <= 0) {
-//             document.querySelector(".countdown").innerHTML = "<strong>Event Started!</strong>";
-//             return;
-//         }
-
-//         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-//         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-//         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-//         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-//         document.getElementById("days").textContent = days.toString().padStart(2, '0');
-//         document.getElementById("hours").textContent = hours.toString().padStart(2, '0');
-//         document.getElementById("minutes").textContent = minutes.toString().padStart(2, '0');
-//         document.getElementById("seconds").textContent = seconds.toString().padStart(2, '0');
-//     }
-
-//     updateTimer();
-//     setInterval(updateTimer, 1000);
-// }
-
-const eventDate = new Date("March 7, 2025 10:00:00").getTime();
-startCountdown(eventDate);
-
-// ---------------------------------------------------------------------------------
 // hero section moving circle animation js logic
 function createCircles() {
     let numCircles = window.innerWidth > 768 ? 20 : 8; // 20 circles for desktop, 8 for mobile
