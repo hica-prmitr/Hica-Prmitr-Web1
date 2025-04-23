@@ -44,3 +44,28 @@ window.addEventListener("resize", () => {
     document.querySelectorAll(".circle").forEach(circle => circle.remove()); // Remove existing circles
     createCircles(); // Recreate with new count
 });
+
+// Hamburger menu functionality
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('.navbar');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navbar.classList.toggle('active');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navbar.contains(e.target) && !hamburger.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navbar.classList.remove('active');
+    }
+});
+
+// Close menu when clicking on a link
+document.querySelectorAll('.navbar_link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navbar.classList.remove('active');
+    });
+});

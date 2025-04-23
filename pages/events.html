@@ -13,10 +13,15 @@
 <body>
     <!----------- header------------->
     <div class="header">
-        <div class="header_logo"><img class="header_logo_img" src="../public/images/byteblogger_img.png"/></div>
+        <div class="header_logo"><img class="header_logo_img" src="../public/images/byteblogger_img.png" loading="lazy" width="150" height="50" alt="HICA PRMITR Logo"/></div>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
         <div class="navbar">
             <li class="navbar_li_item"><a class="navbar_link" href="../index.html"><p class="navbar_link_text">Home</p></a></li>
-            <li class="navbar_li_item"><a class="navbar_link" href="../index.html#event"><p class="navbar_link_text">Events</p></a></li>
+            <li class="navbar_li_item"><a class="navbar_link" href="./events.html"><p class="navbar_link_text">Events</p></a></li>
             <li class="navbar_li_item"><a class="navbar_link" href="./members.html"><p class="navbar_link_text">Members</p></a></li>
         </div>
     </div>
@@ -75,7 +80,7 @@
                     <a href="https://forms.gle/vr4ZeECkXXUwEawq9" class="event_button">Register</a>
                 </div>
                 <div class="event_image">
-                    <img src="../public/images/hica_img/IMG_6387.JPG" alt="Inauguration Ceremony">
+                    <img src="../public/images/hica_img/IMG_6387.JPG" alt="Inauguration Ceremony" loading="lazy" width="500" height="300">
                 </div>
             </div>
         </div>
@@ -114,7 +119,7 @@
                     </p>
                 </div>
                 <div class="event_image">
-                    <img src="../public/images/hica_img/IMG_7125.JPG" alt="Tech Workshop">
+                    <img src="../public/images/hica_img/IMG_7125.JPG" alt="Tech Workshop" loading="lazy" width="500" height="300">
                     <div class="event_tag">Workshop</div>
                 </div>
             </div>
@@ -144,7 +149,7 @@
                     </p>
                 </div>
                 <div class="event_image">
-                    <img src="../public/images/hica_img/IMG_20250307_150409312.jpg" alt="Hackathon">
+                    <img src="../public/images/hica_img/IMG_20250307_150409312.jpg" alt="Hackathon" loading="lazy" width="500" height="300">
                     <div class="event_tag">Ceremony</div>
                 </div>
             </div>
@@ -152,5 +157,6 @@
     </div>
     
     <script src="../scripts/countdown.js"></script>
+    <script src="../scripts/mobile-nav.js"></script>
 </body>
 </html>

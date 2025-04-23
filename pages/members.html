@@ -13,7 +13,12 @@
 <body>
     <!----------- header------------->
     <div class="header">
-        <div class="header_logo"><img class="header_logo_img" src="../public/images/byteblogger_img.png"/></div>
+        <div class="header_logo"><img class="header_logo_img" src="../public/images/byteblogger_img.png" loading="lazy" width="150" height="50" alt="HICA PRMITR Logo"/></div>
+        <button class="hamburger" aria-label="Toggle menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
         <div class="navbar">
             <li class="navbar_li_item"><a class="navbar_link" href="../index.html"><p class="navbar_link_text">Home</p></a></li>
             <li class="navbar_li_item"><a class="navbar_link" href="./events.html"><p class="navbar_link_text">Events</p></a></li>
@@ -37,7 +42,7 @@
                     <!-- Club Lead -->
                     <div class="member_card">
                         <div class="member_image">
-                            <img src="../public//images//hica_img/Shuprant Chapter lead .JPG" alt="Club Lead">
+                            <img src="../public/images/hica_img/Shuprant Chapter lead .JPG" loading="lazy" width="300" height="300" alt="Shuprant - Chapter Lead"/>
                         </div>
                         <div class="member_info">
                             <h4 class="member_name">Shuprant Meshram</h4>
@@ -432,5 +437,6 @@
         </div>
     </div>
 
+    <script src="../scripts/mobile-nav.js"></script>
 </body>
 </html>
